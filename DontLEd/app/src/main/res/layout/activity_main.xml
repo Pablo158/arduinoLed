@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="30sp"
+    android:paddingRight="30sp"
+    android:paddingTop="30sp"
+    android:paddingBottom="30sp"
+    tools:context=".MainActivity"
+    android:transitionGroup="true"
+    android:orientation="vertical">
+
+    <TextView android:text="Bluetooth Example"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview"
+        android:textSize="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Turn On"
+        android:id="@+id/buttonOn"
+
+        android:clickable="true"
+        android:onClick="on" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get visible"
+        android:onClick="visible"
+        android:id="@+id/button2"
+        android:layout_alignBottom="@+id/buttonOn"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="List devices"
+        android:onClick="list"
+        android:id="@+id/button3"
+         />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="turn off"
+        android:onClick="off"
+        android:id="@+id/buttonoff"
+        android:layout_below="@+id/buttonOn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_alignStart="@+id/buttonOn"
+        android:layout_alignLeft="@+id/buttonOn"
+        android:layout_alignParentBottom="true" />
+
+
+</LinearLayout>
